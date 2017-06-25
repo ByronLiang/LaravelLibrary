@@ -1,0 +1,37 @@
+.select-nav{
+    width: 50%;
+    height: 50px;
+    display: block;
+    margin-left: 30%;
+    margin-top: 15px;;
+}
+.select-nav ul li{
+    list-style-type: none;
+    float: left;
+}
+.select-nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+.select-nav li{
+    width: 50%;;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;;
+    display: block;
+}
+.loginframe{
+    width:50%;
+    height: 230px;
+    margin-left: 30%;
+    /*border: 1px solid royalblue;*/
+    display: block;
+}
+.registerframe{
+    width:50%;
+    height: 230px;
+    margin-left: 30%;
+    /*border: 1px solid royalblue;*/
+    display: none;
+}

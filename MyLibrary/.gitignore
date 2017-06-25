@@ -1,0 +1,12 @@
+.DS_Store
+.env
+/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+composer.lock
+npm-debug.log
+.phpstorm.meta.php
+_ide_helper.php
+/storage/certs

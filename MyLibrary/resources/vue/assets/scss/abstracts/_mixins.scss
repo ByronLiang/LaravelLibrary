@@ -1,0 +1,149 @@
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+
+  #{$property}: $value;
+}
+@mixin margin_auto($width) {
+    width: $width;
+    margin: 0 auto;
+}
+@mixin boxSizing($cont) {
+    -webkit-box-sizing: $cont;
+         -o-box-sizing: $cont;
+        -ms-box-sizing: $cont;
+       -moz-box-sizing: $cont;
+            box-sizing: $cont;
+}
+@mixin userSelect($val:none) {
+   -webkit-user-select: $val;
+        -o-user-select: $val;
+       -ms-user-select: $val;
+      -moz-user-select: $val;
+           user-select: $val;
+}
+@mixin outline($val:none){
+    -webkit-outline: $val;
+         -o-outline: $val;
+        -ms-outline: $val;
+       -moz-outline: $val;
+            outline: $val;
+}
+@mixin appearance($val:none){
+    -webkit-appearance: $val;
+       -moz-appearance: $val;
+            appearance: $val;
+}
+@mixin backgroundImg($img,$val:initial) {
+    background: $img;
+    -webkit-background-size: $val;
+         -o-background-size: $val;
+        -ms-background-size: $val;
+       -moz-background-size: $val;
+            background-size: $val;
+}
+@mixin transitions($attr:all,$times:0.3s,$fn:ease) {
+    -webkit-transition:$attr $times $fn;
+         -o-transition:$attr $times $fn;
+        -ms-transition:$attr $times $fn;
+       -moz-transition:$attr $times $fn;
+            transition:$attr $times $fn;
+}
+@mixin transforms() {
+    -webkit-transform:translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1);
+         -o-transform:translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1);
+        -ms-transform:translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1);
+       -moz-transform:translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1);
+            transform: translate3d(-100%, 0, 0) translate3d(-2em, 0, 0) scale3d(0.5, 1, 1);
+    -webkit-transform-origin: 100% 50%;
+         -o-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+       -moz-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+}
+@mixin fontLine($width:50%,$mar:0,$color:currentColor,$vert:middle) {
+    &:before,&:after{
+        content: '';
+        display: inline-block;
+        width: $width;
+        height: 1px;
+        background: $color;
+        vertical-align: $vert;
+    }
+    &:before{
+        margin-right: $mar;
+    }
+    &:after{
+        margin-left: $mar;
+    }
+}
+@mixin spritebox($url,$left, $top, $height, $width, $size:initial){
+    background-image: $url;
+    background-repeat: no-repeat;
+    background-position: $left $top;
+    height: $height;
+    width: $width;
+    background-size: $size;
+}
+@mixin buttonStyle($bg,$color,$width,$height,$borderRadius,$fz:inherit,$border:0){
+    display: inline-block;
+    text-align: center;
+    background: $bg;
+    color: $color;
+    font-size: $fz;
+    width: $width;
+    height: $height;
+    border: $border;
+    border-radius: $borderRadius;
+}
+@mixin inputStyle($width,$borderColor,$bg,$borderR,$pad){
+    width: $width;
+    border: 1px solid $borderColor;
+    background-color: $bg;
+    border-radius: $borderR;
+    padding: $pad;
+}
+@mixin transformStyle($val){
+    -webkit-transform: $val;
+         -o-transform: $val;
+        -ms-transform: $val;
+       -moz-transform: $val;
+            transform: $val;
+}
+@mixin triangleStyle($borderWidth, $color, $position){
+    width: 0;
+    height: 0;
+    border: $borderWidth solid $color;
+    @if $position == 'left' {
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    } @else if $position == 'right' {
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+    } @else if $position == 'bottom' {
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+    } @else if $position == 'top' {
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+}
+@mixin placeHolder($color){
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    $color;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    $color;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    $color;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    $color;
+    }
+}

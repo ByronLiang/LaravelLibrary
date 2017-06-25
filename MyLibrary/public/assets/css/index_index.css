@@ -1,0 +1,278 @@
+body
+{
+    margin: 0px auto;
+    background-color: azure;
+}
+a{
+    text-decoration: none;
+}
+.top-nav{
+    height: 30px;
+    width: 100%;
+    background-color: #CCCCCC;
+}
+.top-nav ul li{
+    list-style-type: none;
+    float: left;
+}
+.top-nav ul{
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCCCCC;
+    margin-top: -6px;
+    display: block;
+}
+.top-nav li{
+    width: 20%;
+    height: 35px;;
+    text-align: center;
+    background-color: #CCCCCC;
+    display: block;
+    line-height: 35px;;
+}
+.top-nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: brown;
+}
+.top-nav a:hover{
+    background-color: aquamarine;
+    display: block;
+}
+.booktype-nav{
+    width: 100%;
+    height: 145px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 5%;
+}
+.book_citytype,.book_type,.book_listtype{
+    width: 90%;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.book_citytype ul li{
+    list-style-type: none;
+    float: left;
+}
+.book_citytype ul{
+    margin: 0px;
+    padding: 0px;
+}
+.book_citytype li{
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+.book_type ul li{
+    list-style-type: none;
+    float: left;
+}
+.book_type ul{
+
+    margin: 0px;
+    padding: 0px;
+}
+.book_type li{
+    width: 10%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+.book_listtype ul li{
+    list-style-type: none;
+    float: left;
+}
+.book_listtype ul{
+    margin: 0px;
+    padding: 0px;
+}
+.book_listtype li{
+    width: 11%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+.main-content{
+    width: 100%;
+    /*height: 400px;*/
+    /*border: 1px solid blueviolet;*/
+    margin-top: 10px;
+    background-color: whitesmoke;
+}
+.search-nav{
+    width: 45%;
+    margin-left: 20%;
+    height: 50px;
+    /*border: 1px solid deeppink;*/
+    padding-left: 5%;
+}
+.booklist{
+    width: 82.5%;
+    height:340px;
+    float: left;
+    margin-left: 0%;
+    margin-top: 10px;
+    /*border: 1px solid maroon;*/
+    padding-top: 5px;
+    background-color: white;
+}
+.right-nav{
+    /*position: absolute;*/
+    /*top:308px;*/
+    /*left: 77.7%;*/
+    float: right;
+    margin-top: 10px;
+    width: 16%;
+    /*border: 1px solid red;*/
+    height: 345px;
+    background-color: snow;
+}
+.right-nav-title
+{
+    width: 90%;
+    height: 40px;
+    margin-top: 150px;
+    margin-left: 5%;
+    font-size: 18px;
+    line-height:40px;
+    text-align:center;
+    background-color: gainsboro;
+}
+.right-nav-title a{
+    text-decoration: none;
+    color: black;
+}
+.right-nav-title a:hover{
+    text-decoration: none;
+    background-color: burlywood;
+    display: block;
+}
+.right-nav ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+.right-nav ul{
+    display: block;
+}
+.right-nav li{
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+}
+.right-nav li a{
+    text-decoration: none;
+    color: black;
+}
+.right-nav li a:hover{
+    background-color: aquamarine;
+    display: block;
+}
+
+.page-nav{
+    width: 70%;
+    margin-left: 7%;
+    height: 30px;
+    float: left;
+    /*border: 1px solid chartreuse;*/
+    padding-left: 5%;
+    padding-top: 5px;
+    margin-top: 1px;
+}
+.page-nav ul,li{
+    float: left;
+    list-style-type: none;
+
+}
+.page-nav ul{
+    width: 90%;
+    height: 25px;
+    padding: 0px;
+    margin: 0px;
+    /*border: 1px solid rebeccapurple;;*/
+}
+.page-nav li{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.page-nav a{
+    text-decoration: none;
+}
+.page-number {
+  height: 47px;
+  line-height: 45px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.page-number .page-left {
+  width: 130px;
+  color: #959595;
+}
+
+.page-number .page-right {
+  display: inline-block;
+}
+
+.page-number .page-right a {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #ebebeb;
+}
+
+.page-number .page-right a i {
+  color: #b7b7b7;
+}
+
+.page-number .page-right .page-number-a-active {
+  border: 0;
+  color: #fff;
+  background-color: #01b8d0;
+}
+
+.page-number .page-right .page-number-ellipsis {
+  border: 0;
+}
+
+.page-number .page-right input {
+  border: 1px solid #ebebeb;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+}
+
+.page-number .page-right button {
+  margin-right: 15px;
+  width: 42px;
+  height: 26px;
+  font-size: 12px;
+}
+
+.page-number .page-right .number-after {
+  padding-left: 20px;
+}
+
+.page-number .page-right .buttom-default {
+  color: #8da0a8;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+}
+.mybutton{
+    background-color: red;
+}

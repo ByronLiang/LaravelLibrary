@@ -1,0 +1,20 @@
+.btn-pos{
+    width:80%;
+    height: 145px;
+    margin-left: 10%;
+    /*border: 1px solid red;*/
+}
+.user_info_content{
+    background-color: papayawhip;
+    width:80%;
+    height: 572px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+.basic_info_content{
+    width: 80%;
+    margin-left: 10%;
+    height: 240px;
+    padding-top: 10px;
+    padding-left: 5px;
+}

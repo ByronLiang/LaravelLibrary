@@ -1,0 +1,35 @@
+//https://sass-guidelin.es/#architecture
+
+@import 'abstracts';
+
+/* Base */
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/border';
+@import 'base/colors';
+
+/* components */
+//@import 'components/loading';
+
+/* layout 来源：https://github.com/basscss/basscss-sass */
+@import 'layout/flexbox';
+@import 'layout/grid';
+@import 'layout/hide';
+@import 'layout/layout';
+@import 'layout/position';
+
+/*图片字体等*/
+@import "assets";
+/*辅助类*/
+@import "helper";
+
+/*
+
+//@import 'pages/home';
+
+//@import 'themes/theme';
+//@import 'themes/admin';
+*/
+
+/* 第三方类 */
+@import "vendors";

@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "cross-env NODE_ENV=development webpack --watch --watch-poll --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "cross-env NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "axios": "^0.16.0",
+    "blueimp-load-image": "^2.12.0",
+    "lodash": "^4.17.0",
+    "mint-ui": "^2.2.0",
+    "normalize.css": "^6.0.0",
+    "promise.prototype.finally": "^2.0.1",
+    "vue": "^2.2.0",
+    "vue-router": "^2.3.0",
+    "vuex": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-component": "^0.9.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "laravel-mix": "^0.11.0"
+  }
+}

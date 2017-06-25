@@ -1,0 +1,13 @@
+.mint-swipe-items-wrap > div{
+  text-align: center;
+
+  img{
+    width: 100%;
+    max-height: initial;
+  }
+}
+
+.mint-switch-input:checked + .mint-switch-core{
+  background: #4cd864 !important;
+  border-color: #4cd864 !important;
+}
